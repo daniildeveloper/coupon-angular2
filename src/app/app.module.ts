@@ -16,7 +16,7 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [HeaderComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

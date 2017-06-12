@@ -1,0 +1,18 @@
+{
+  "name": "ng-app",
+  "description": "",
+  "main": "",
+  "authors": [
+    "daniiltserin <daniilborowkow@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendors",
+    "test",
+    "tests"
+  ]
+}
