@@ -18,6 +18,11 @@ export class ApiServiceProvider {
      */
     private Rfile = this.dataFolder + '/R.json';
 
+    /**
+     * where from get menu items
+     */
+    private menuItems = this.dataFolder + '/menuitems.json';
+
 
     constructor(private _http: Http) {
 
@@ -36,10 +41,15 @@ export class ApiServiceProvider {
             ;
     }
     /**
-     * While menu customizable is, we must have menu items Objects
+     * While menu customizable is, we must have menu items Objects.
      */
-    getMenuItems(): [Array<String>] {
-        return [['']];
+    getMenuItems() {
+
+        return this._http.get(this.menuItems).map(
+            res => {
+                return res.json();
+            }
+        );
     }
 
     /**
