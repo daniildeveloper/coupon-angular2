@@ -25,5 +25,8 @@ export class AppComponent {
     this._api.getCouponCategorieById(1).subscribe(
       data => console.log(data)
     );
+    this._api.getFaqList().subscribe(
+      data => console.log(data[1])
+    )
   }
 }
