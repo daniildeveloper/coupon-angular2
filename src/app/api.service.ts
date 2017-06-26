@@ -18,10 +18,6 @@ export class ApiServiceProvider {
      */
     private Rfile = this.dataFolder + '/R.json';
 
-    // -----------------
-    // here goes app variables
-    // -----------------
-    public supportPhone: String;
 
     constructor(private _http: Http) {
 

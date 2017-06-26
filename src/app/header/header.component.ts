@@ -1,17 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServiceProvider } from '../api.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
+  providers: [ApiServiceProvider]
 })
 export class HeaderComponent implements OnInit {
-  supportPhone: string;
-
-  constructor() { }
+  supportPhone;
+  
+  constructor(private _api: ApiServiceProvider) { }
 
   ngOnInit() {
-    // this.supportPhone = this._api.getSupportPhone();
+    this._api.getSupportPhone().subscribe(
+      data => {
+        console.log(data);
+        this.supportPhone = data;
+      }
+    );
   }
 
 }

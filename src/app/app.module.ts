@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuthComponent } from './auth/auth.component';
+import { ApiServiceProvider } from './api.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AuthComponent } from './auth/auth.component';
     FormsModule,
     HttpModule
   ],
-  providers: [HeaderComponent],
+  providers: [HeaderComponent, ApiServiceProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
