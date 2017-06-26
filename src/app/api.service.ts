@@ -27,7 +27,7 @@ export class ApiServiceProvider {
     /**
      * where from get coupon categories
      */
-    private couponCategories = this.dataFolder + 'couponcategories' + this.ext;
+    private couponCategories = this.dataFolder + '/couponcategories' + this.ext;
 
 
     constructor(private _http: Http) {
@@ -61,7 +61,7 @@ export class ApiServiceProvider {
     /**
      * get coupon categories with icons and names
      * structure:
-     * "categorySlug": {
+     * "categoryId: Integer": {
      *    "name": "name to display",
      *    "icon": "icon to display"
      * }
@@ -76,8 +76,10 @@ export class ApiServiceProvider {
      * get coupon categorie by id
      * @param id
      */
-    getCouponCategorieById(id: number): Object {
-        return {};
+    getCouponCategorieById(id: number) {
+        return this._http
+            .get(this.couponCategories)
+            .map(res => res.json()[id]);
     }
 
     /**

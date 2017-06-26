@@ -1,13 +1,13 @@
 {
-    "food": {
+    "1": {
         "name": "Еда и напитки",
         "icon": "fa fa-cog"
     },
-    "dress": {
+    "2": {
         "name": "Еда и напитки",
         "icon": "fa fa-cog"
     },
-    "home": {
+    "3": {
         "name": "Еда и напитки",
         "icon": "fa fa-cog"
     }

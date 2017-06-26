@@ -18,9 +18,12 @@ export class AppComponent {
   ngOnInit() {
     this._api.getSupportPhone().subscribe(
       data => {
-        console.log(data);
+        // console.log(data);
         this.supportPhone = data;
       }
+    );
+    this._api.getCouponCategorieById(1).subscribe(
+      data => console.log(data)
     );
   }
 }

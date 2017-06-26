@@ -9,7 +9,6 @@ import { ApiServiceProvider } from '../api.service';
 })
 export class HeaderComponent implements OnInit {
   supportPhone;
-  
   constructor(private _api: ApiServiceProvider) { }
 
   ngOnInit() {
