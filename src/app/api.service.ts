@@ -34,6 +34,11 @@ export class ApiServiceProvider {
      */
     private coupons = this.dataFolder + '/coupons';
 
+    /**
+     * get availbale cities where coupons are to buy
+     */
+    private cities = this.dataFolder + '/cities' + this.ext;
+
 
     constructor(private _http: Http) {
 
@@ -99,7 +104,7 @@ export class ApiServiceProvider {
      * get coupon info by id
      * @param id of coupon to search
      */
-    getCoupon(id: number) {
+    getCoupon(id: Number) {
         return this._http.get(this.coupons + '/' + id + this.ext)
             .map(res => res.json());
     }
@@ -107,16 +112,18 @@ export class ApiServiceProvider {
     /**
      * find coupon by string
      * @param query string with coupon must be finded
+     * TODO:
      */
-    findCouponByString(query: string): Object[] {
-        return [{}];
+    findCouponByString(query: String) {
+        return this.getCouponCategories();
     }
 
     /**
      * get availbale cities
      */
-    getavailbaleCities(): Object[] {
-        return [{}];
+    getAvailbaleCities() {
+        return this._http.get(this.cities)
+            .map(res => res.json());
     }
 
     /**
