@@ -8,6 +8,7 @@ import 'rxjs/add/operator/map';
  */
 @Injectable()
 export class ApiServiceProvider {
+    private ext = '.json';
     /**
      * where data contains
      */
@@ -16,12 +17,17 @@ export class ApiServiceProvider {
     /**
      * R file file where R is like in android R. Here can find all needed data
      */
-    private Rfile = this.dataFolder + '/R.json';
+    private Rfile = this.dataFolder + '/R' + this.ext;
 
     /**
      * where from get menu items
      */
-    private menuItems = this.dataFolder + '/menuitems.json';
+    private menuItems = this.dataFolder + '/menuitems' + this.ext;
+
+    /**
+     * where from get coupon categories
+     */
+    private couponCategories = this.dataFolder + 'couponcategories' + this.ext;
 
 
     constructor(private _http: Http) {
@@ -54,9 +60,16 @@ export class ApiServiceProvider {
 
     /**
      * get coupon categories with icons and names
+     * structure:
+     * "categorySlug": {
+     *    "name": "name to display",
+     *    "icon": "icon to display"
+     * }
      */
-    getCouponCategories(): Object[] {
-        return [{}];
+    getCouponCategories() {
+        return this._http
+            .get(this.couponCategories)
+            .map(res => res.json());
     }
 
     /**

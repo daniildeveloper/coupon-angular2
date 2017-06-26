@@ -1,0 +1,14 @@
+{
+    "food": {
+        "name": "Еда и напитки",
+        "icon": "fa fa-cog"
+    },
+    "dress": {
+        "name": "Еда и напитки",
+        "icon": "fa fa-cog"
+    },
+    "home": {
+        "name": "Еда и напитки",
+        "icon": "fa fa-cog"
+    }
+}
