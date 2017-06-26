@@ -30,7 +30,6 @@ export class ApiServiceProvider {
         return this._http.get(this.Rfile)
             .map(
             res => {
-                console.log(res.json().supportPhone);
                 return res.json().supportPhone;
             }
             )

@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this._api.getSupportPhone().subscribe(
       data => {
-        console.log(data);
         this.supportPhone = data;
       }
     );
