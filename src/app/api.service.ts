@@ -39,6 +39,11 @@ export class ApiServiceProvider {
      */
     private cities = this.dataFolder + '/cities' + this.ext;
 
+    /**
+     * where fro get faq questions
+     */
+    private faq = this.dataFolder + '/faq' + this.ext;
+
 
     constructor(private _http: Http) {
 
@@ -128,9 +133,14 @@ export class ApiServiceProvider {
 
     /**
      * get faq questions list
+     * {"1": {
+     *  "quest": "Почему",
+     *   "answer": "Потому что"
+     * }}
      */
-    getFaqList(): Object[] {
-        return [{}];
+    getFaqList() {
+        return this._http.get(this.faq)
+            .map(res => res.json());
     }
 
 }
