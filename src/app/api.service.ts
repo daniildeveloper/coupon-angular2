@@ -29,6 +29,11 @@ export class ApiServiceProvider {
      */
     private couponCategories = this.dataFolder + '/couponcategories' + this.ext;
 
+    /**
+     * where from get  all coupons
+     */
+    private coupons = this.dataFolder + '/coupons' + this.ext;
+
 
     constructor(private _http: Http) {
 
@@ -83,10 +88,11 @@ export class ApiServiceProvider {
     }
 
     /**
-     * get coupons chunks
+     * get all
      */
-    getCoupons(): Object[] {
-        return [{}];
+    getCoupons() {
+        return this._http.get(this.coupons)
+            .map(res => res.json());
     }
 
     /**
