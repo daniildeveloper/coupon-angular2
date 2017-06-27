@@ -1,5 +1,5 @@
 <div class="sidebar-box" *ngIf="show">
-  <h3>Последние просмотры</h3>
+  <h3>Недавно смотрели</h3>
   <ul class="thumb-list">
     <li *ngFor="let coupon of latestCoupons" >
       <a routerLink="/coupons/{{coupon['id']}}">

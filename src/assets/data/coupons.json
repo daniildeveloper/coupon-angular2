@@ -11,6 +11,12 @@
             "rating": 4,
             "isTop": true,
             "imagePath": "assets/img/coupon.jpeg",
+            "images": [
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg"
+            ],
             "companyName": "Какая то компания",
             "companyAddress": "ЖердынБирЖерово, Абая 1",
             "compnayPhones": [
@@ -32,6 +38,12 @@
             "companyAddress": "ЖердынБирЖерово, Абая 1",
             "compnayPhones": [
                 "+77772380471"
+            ],
+            "images": [
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg",
+                "assets/img/coupon.jpeg"
             ]
         }
     ]
