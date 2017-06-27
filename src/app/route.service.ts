@@ -8,6 +8,7 @@ import { PromoComponent } from './promo/promo.component';
 import { FaqComponent } from './faq/faq.component';
 import { BuyerComponent } from './buyer/buyer.component';
 import { SellerComponent } from './seller/seller.component';
+import { PromosComponent } from './promos/promos.component';
 
 /**
  * array of routes
@@ -18,6 +19,7 @@ const routeList: Array<Object> = [
     { path: 'coupons/:id', component: CouponComponent },
     { path: 'news', component: NewsComponent },
     { path: 'news/:id', component: NewsSingleComponent },
+    { path: 'promos', component: PromosComponent },
     { path: 'promo/:slug', component: PromoComponent },
     { path: 'faq', component: FaqComponent },
     { path: 'my', component: BuyerComponent },
