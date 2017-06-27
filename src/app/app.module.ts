@@ -29,6 +29,7 @@ import { SearchComponent } from './search/search.component';
 
 // bootstrap modules
 import { CarouselModule } from 'ngx-bootstrap';
+import { CouponsChunkComponent } from './coupons-chunk/coupons-chunk.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { CarouselModule } from 'ngx-bootstrap';
     SidebarComponent,
     LatestViewsComponent,
     BannerComponent,
-    SearchComponent
+    SearchComponent,
+    CouponsChunkComponent
   ],
   imports: [
     BrowserModule,
