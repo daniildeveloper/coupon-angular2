@@ -23,6 +23,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CouponCategoriesComponent } from './coupon-categories/coupon-categories.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LatestViewsComponent } from './latest-views/latest-views.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ThanksComponent,
     NotfoundComponent,
     CouponCategoriesComponent,
-    SidebarComponent
+    SidebarComponent,
+    LatestViewsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,7 @@ import { ApiServiceProvider } from './api.service';
   providers: [ApiServiceProvider]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Chiki chiki. Powered by daniiltserin!';
   supportPhone;
   isSupportPhoneAvailable: Boolean = false;
   constructor(private _api: ApiServiceProvider) {
@@ -16,17 +16,5 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this._api.getSupportPhone().subscribe(
-      data => {
-        // console.log(data);
-        this.supportPhone = data;
-      }
-    );
-    this._api.getCouponCategorieById(1).subscribe(
-      data => console.log(data)
-    );
-    this._api.getFaqList().subscribe(
-      data => console.log(data[1])
-    )
   }
 }

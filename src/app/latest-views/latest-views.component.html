@@ -1,0 +1,19 @@
+<div class="sidebar-box">
+  <h3>Последние просмотры</h3>
+  <ul class="thumb-list">
+    <li *ngFor="let coupon of latestCoupons" >
+      <a routerLink="/coupons/{{coupon['id']}}">
+        <img src="{{coupon['imagePath']}}" alt="{{coupon['title']}}" title="{{coupon['title']}}">
+      </a>
+      <div class="thumb-list-item-caption">
+        <h5 class="thumb-list-item-title">
+          <a routerLink="/coupons/{{coupon['id']}}">
+            {{coupon['title']}}
+          </a>
+        </h5>
+        <p class="thumb-list-item-price" *ngIf="coupon['price'] > 0" >{{coupon['price']}}</p>
+        <p class="thumb-list-item-price" *ngIf="coupon['price'] === 0" >Бесплатно!</p>
+      </div>
+    </li>
+  </ul>
+</div>
