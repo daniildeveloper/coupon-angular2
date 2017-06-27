@@ -1,14 +1,29 @@
 {
-    "1": {
-        "name": "Еда и напитки",
-        "icon": "fa fa-cog"
-    },
-    "2": {
-        "name": "Еда и напитки",
-        "icon": "fa fa-cog"
-    },
-    "3": {
-        "name": "Еда и напитки",
-        "icon": "fa fa-cog"
-    }
+    "items": [
+        {
+            "id": 1,
+            "name": "Еда и напитки",
+            "icon": "fa fa-cog"
+        },
+        {
+            "id": 2,
+            "name": "Еда и напитки",
+            "icon": "fa fa-user"
+        },
+        {
+            "id": 3,
+            "name": "Еда",
+            "icon": "fa fa-cog"
+        },
+        {
+            "id": 4,
+            "name": "Еда и напитки",
+            "icon": "fa fa-cog"
+        },
+        {
+            "id": 5,
+            "name": "Еда и напитки",
+            "icon": "fa fa-cog"
+        }
+    ]
 }

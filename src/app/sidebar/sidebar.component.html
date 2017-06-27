@@ -1,0 +1,36 @@
+<aside class="sidebar-left">
+  <h3 class="mb20">Я ищу:</h3>
+  <ul class="nav nav-tabs nav-stacked nav-coupon-category nav-coupon-category-left">
+    
+    <li>
+      <a *ngFor="let category of couponCategories" ><i class="{{category['icon']}}"></i>{{category['name']}}</a>
+    </li>
+  </ul>
+
+  <div class="sidebar-box">
+    <h5>Последние просмотры</h5>
+    <ul class="thumb-list">
+      <li>
+        <a href="#"><img src="/img/70x70.png" alt="Image Alternative text" title="Товар по большой скидке"></a>
+        <div class="thumb-list-item-caption">
+          <h5 class="thumb-list-item-title"><a href="#">Лучший смартфон</a></h5>
+          <p class="thumb-list-item-price">120 000 тг</p>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="/img/70x70.png" alt="Image Alternative text" title="Товар по большой скидке"></a>
+        <div class="thumb-list-item-caption">
+          <h5 class="thumb-list-item-title"><a href="#">Лучший смартфон</a></h5>
+          <p class="thumb-list-item-price">120 000 тг</p>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="/img/70x70.png" alt="Image Alternative text" title="Товар по большой скидке"></a>
+        <div class="thumb-list-item-caption">
+          <h5 class="thumb-list-item-title"><a href="#">Лучший смартфон</a></h5>
+          <p class="thumb-list-item-price">120 000 тг</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>

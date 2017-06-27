@@ -21,6 +21,8 @@ import { BuyerComponent } from './buyer/buyer.component';
 import { PromoComponent } from './promo/promo.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { CouponCategoriesComponent } from './coupon-categories/coupon-categories.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
     BuyerComponent,
     PromoComponent,
     ThanksComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CouponCategoriesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
