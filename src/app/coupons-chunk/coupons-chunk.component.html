@@ -1,8 +1,11 @@
 <h2>Все купоны</h2>
 <div class="row row-wrap">
 
-  <div class="col-md-4">
-    <div class="product-thumb" style="border: 5px solid #FEC52E;">
+  <!--style="border: 5px solid #FEC52E;"-->
+  <div *ngFor="let coupon of coupons" class="col-md-4"
+    
+  >
+    <div class="product-thumb" [ngClass]="{'isTop': coupon['isTop']}">
       <div class="hit">
         <div class="hit-text">
           Хиты
@@ -42,5 +45,4 @@
       </div>
     </div>
   </div>
-
 </div>

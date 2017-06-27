@@ -1,0 +1,16 @@
+.isTop{
+    border: 5px solid #FEC52E;
+}
+.hit{
+    position: absolute;
+    background: #FEC52E;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 0 0 2px 0;
+    border: 5px solid #FEC52E;
+  }
+  .hit-text {
+    color: #FFF;
+    font-size: 16px;
+
+  }

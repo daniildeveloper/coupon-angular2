@@ -1,15 +1,38 @@
 {
-    "1": {
-        "title": "Купон",
-        "shortDescription": "Какой то купон",
-        "description": "описание купона",
-        "price": 0,
-        "rating": 3,
-        "imagePath": "assets/img/coupon.jpeg",
-        "companyName": "Какая то компания",
-        "companyAddress": "ЖердынБирЖерово, Абая 1",
-        "compnayPhones": [
-            "+77772380471"
-        ]
-    }
+    "items": [
+        {
+            "id": 1,
+            "title": "Купон",
+            "shortDescription": "Какой то купон",
+            "description": "описание купона",
+            "profitType": "Скидка",
+            "price": 100,
+            "oldPrice": 250,
+            "rating": 4,
+            "isTop": true,
+            "imagePath": "assets/img/coupon.jpeg",
+            "companyName": "Какая то компания",
+            "companyAddress": "ЖердынБирЖерово, Абая 1",
+            "compnayPhones": [
+                "+77772380471"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Купон",
+            "shortDescription": "Some description",
+            "description": "описание купона",
+            "profitType": "Скидка",
+            "price": 100,
+            "oldPrice": 100,
+            "rating": 3,
+            "isTop": false,
+            "imagePath": "assets/img/coupon.jpeg",
+            "companyName": "Какая то компания",
+            "companyAddress": "ЖердынБирЖерово, Абая 1",
+            "compnayPhones": [
+                "+77772380471"
+            ]
+        }
+    ]
 }
