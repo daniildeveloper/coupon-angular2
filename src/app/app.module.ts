@@ -24,6 +24,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { CouponCategoriesComponent } from './coupon-categories/coupon-categories.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LatestViewsComponent } from './latest-views/latest-views.component';
+import { BannerComponent } from './banner/banner.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { LatestViewsComponent } from './latest-views/latest-views.component';
     NotfoundComponent,
     CouponCategoriesComponent,
     SidebarComponent,
-    LatestViewsComponent
+    LatestViewsComponent,
+    BannerComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

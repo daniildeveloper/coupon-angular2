@@ -44,7 +44,15 @@ export class ApiServiceProvider {
      */
     private faq = this.dataFolder + '/faq' + this.ext;
 
+    /**
+     * where from get latest views.
+     */
     private latestViews = this.dataFolder + '/latest' + this.ext;
+
+    /**
+     * banner
+     */
+    private banner = this.dataFolder + '/banner' + this.ext;
 
 
     constructor(private _http: Http) {
@@ -151,7 +159,14 @@ export class ApiServiceProvider {
     getLatestViews() {
         return this._http.get(this.latestViews)
             .map(res => res.json());
+    }
 
+    /**
+     * get banner
+     */
+    getBanner() {
+        return this._http.get(this.banner)
+            .map(res => res.json());
     }
 
 }
