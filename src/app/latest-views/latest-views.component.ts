@@ -11,13 +11,14 @@ import { Observable } from 'rxjs/Rx';
 export class LatestViewsComponent implements OnInit {
 
   latestCoupons;
+  show = false;
   constructor(private _api: ApiServiceProvider) { }
 
   ngOnInit() {
     this._api.getLatestViews().subscribe(
       data => {
         this.latestCoupons = data['items'];
-        console.log(data);
+        this.show = true;
       }
     );
     // get each 30 seconds new info about latest views
@@ -26,6 +27,7 @@ export class LatestViewsComponent implements OnInit {
         this._api.getLatestViews().subscribe(
           data => {
             this.latestCoupons = data['items'];
+            this.show = true;
           }
         );
       }
