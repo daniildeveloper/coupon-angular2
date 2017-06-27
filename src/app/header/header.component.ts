@@ -9,6 +9,7 @@ import { ApiServiceProvider } from '../api.service';
 })
 export class HeaderComponent implements OnInit {
   supportPhone;
+  menuItems;
   constructor(private _api: ApiServiceProvider) { }
 
   ngOnInit() {
@@ -17,6 +18,12 @@ export class HeaderComponent implements OnInit {
         this.supportPhone = data;
       }
     );
+    this._api.getMenuItems().subscribe(
+      data => {
+        console.log(data);
+        this.menuItems = data['items'];
+      }
+    )
   }
 
 }

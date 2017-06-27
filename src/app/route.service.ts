@@ -13,15 +13,15 @@ import { SellerComponent } from './seller/seller.component';
  * array of routes
  */
 const routeList: Array<Object> = [
-    { path: '/', component: MainpageComponent },
-    { path: '/coupons', component: CouponsComponent },
-    { path: '/coupons/:id', component: CouponComponent },
-    { path: '/news', component: NewsComponent },
-    { path: '/news/:id', NewsSingleComponent },
-    { path: '/promo/:slug', PromoComponent },
-    { path: '/faq', component: FaqComponent },
-    { path: '/my', component: BuyerComponent },
-    { path: '/cabinet', component: SellerComponent }
+    { path: '', component: MainpageComponent },
+    { path: 'coupons', component: CouponsComponent },
+    { path: 'coupons/:id', component: CouponComponent },
+    { path: 'news', component: NewsComponent },
+    { path: 'news/:id', component: NewsSingleComponent },
+    { path: 'promo/:slug', component: PromoComponent },
+    { path: 'faq', component: FaqComponent },
+    { path: 'my', component: BuyerComponent },
+    { path: 'cabinet', component: SellerComponent }
 ];
 
 /**

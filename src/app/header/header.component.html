@@ -27,9 +27,8 @@
             <div class="flexnav-menu-button" id="flexnav-menu-button">Menu</div>
             <nav>
               <ul class="nav nav-pills flexnav" id="flexnav" data-breakpoint="800">
-                <li class="active"><a href="/">Все купоны</a></li>
-                <li>
-                  <a href="#">Новости</a>
+                <li *ngFor="let menuItem of menuItems">
+                  <a routerLink="{{menuItem['link']}}">{{menuItem["name"]}}</a>
                 </li>
               </ul>
             </nav>
