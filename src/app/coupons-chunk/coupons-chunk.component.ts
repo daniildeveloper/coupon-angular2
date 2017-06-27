@@ -11,7 +11,6 @@ import { ApiServiceProvider } from '../api.service';
 })
 export class CouponsChunkComponent implements OnInit {
   coupons;
-  
   constructor(private _api: ApiServiceProvider) { }
 
   ngOnInit() {
@@ -26,8 +25,6 @@ export class CouponsChunkComponent implements OnInit {
     let style = {
       'border':  '5px solid #FEC52E'
     };
-    
-
   }
 
 }

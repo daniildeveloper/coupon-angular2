@@ -2,19 +2,21 @@
 <div class="row row-wrap">
 
   <!--style="border: 5px solid #FEC52E;"-->
-  <div *ngFor="let coupon of coupons" class="col-md-4"
-    
-  >
+  <div *ngFor="let coupon of coupons" class="col-md-4">
     <div class="product-thumb" [ngClass]="{'isTop': coupon['isTop']}">
-      <div class="hit">
+      <div [ngClass]="{
+        'hit':coupon['isTop'], 
+        'hidden': !coupon['isTop']}">
+        <!--display coupon as hit-->
         <div class="hit-text">
-          Хиты
+          Хит
         </div>
       </div>
       <header class="product-header">
         <img style="height: 260px" src="" alt="" title="">
         <div class="product-quick-view">
-          <a class="fa fa-eye popup-text" href="#" data-effect="mfp-move-from-top" data-toggle="tooltip" data-placement="top" title="Посмотреть"></a>
+          <a class="fa fa-eye popup-text" routerLink="coupons/{{coupon['id']}}" data-effect="mfp-move-from-top" data-toggle="tooltip"
+            data-placement="top" title="Посмотреть"></a>
         </div>
         <div class="product-secondary-image"><img style="height: 260px" src="" alt="" title=""></div>
       </header>
@@ -26,13 +28,19 @@
           <li><i class="fa fa-star"></i></li>
           <li><i class="fa fa-star"></i></li>
         </ul>
-        <h5 class="product-title"></h5>
-        <p class="product-desciption"></p>
+        <!--product title-->
+        <h5 class="product-title">
+          {{coupon['title']}}
+        </h5>
+        <!--end product title-->
+        <p class="product-desciption">
+          {{coupon['shortDescription']}}
+        </p>
         <div class="product-meta">
           <ul class="product-price-list">
 
-            <li><span class="product-price">500тг</span></li>
-            <li><span class="product-old-price">1000тг</span></li>
+            <li><span class="product-price">{{coupon['price']}}тг</span></li>
+            <li><span class="product-old-price">{{coupon['oldPrice']}}тг</span></li>
             <li><span class="product-save"></span></li>
           </ul>
           <ul class="product-actions-list">
