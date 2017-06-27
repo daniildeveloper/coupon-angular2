@@ -27,6 +27,9 @@ import { LatestViewsComponent } from './latest-views/latest-views.component';
 import { BannerComponent } from './banner/banner.component';
 import { SearchComponent } from './search/search.component';
 
+// bootstrap modules
+import { CarouselModule } from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +59,7 @@ import { SearchComponent } from './search/search.component';
     FormsModule,
     HttpModule,
     routing,
+    CarouselModule.forRoot(),
   ],
   providers: [HeaderComponent, ApiServiceProvider],
   bootstrap: [AppComponent]
