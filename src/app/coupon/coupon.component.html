@@ -1,6 +1,4 @@
 <div class="container">
-
-
   <div class="row">
     <div class="col-md-7">
       <carousel>
@@ -22,11 +20,24 @@
       </small>-->
       <div *ngIf="coupon">
         <h3>{{coupon['title']}}</h3>
+        <h4>{{coupon['profitType']}}</h4>
         <p class="product-info-price">{{coupon['price']}}тг</p>
       <p class="text-smaller text-muted">
         {{coupon['shortDescription']}}
       </p>
         <div [innerHtml]="coupon['description']">
+        </div>
+        <hr>
+        <div>
+          <h4>{{coupon['companyName']}}</h4>
+          <h3>Адрес:</h3>
+          <p>{{coupon['companyAddress']}}</p>
+          <ul class="phones">
+            <li style="list-style-type: none;" *ngFor="let phone of coupon['companyPhones']">
+              <a href="tel:{{phone}}">{{phone}}</a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>

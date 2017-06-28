@@ -6,7 +6,7 @@ declare var Swiper: any;
 @Component({
   selector: 'app-coupon',
   templateUrl: './coupon.component.html',
-  styleUrls: ['./coupon.component.css']
+  styleUrls: ['./coupon.component.less']
 })
 export class CouponComponent implements OnInit {
   id;
