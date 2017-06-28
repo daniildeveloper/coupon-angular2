@@ -7365,3 +7365,7 @@ ul.pagination li.active a:hover {
 .form-control:focus {
     border-color: #fbbf3e
 }
+span.icon-prev.carousel-control-prev-icon:before, span.icon-next.carousel-control-next-icon:before{
+    display: none !important;
+    content: "" !important;
+}

@@ -1,7 +1,18 @@
 {
-    "id": 1,
-    "type": "coupon",
-    "promoutedId": 1,
-    "img": "/assets/img/coupon.jpeg",
-    "content": "Banner"
+    "items": [
+        {
+            "id": 1,
+            "type": "coupons",
+            "promoutedId": 1,
+            "img": "/assets/img/coupon.jpeg",
+            "content": "Banner"
+        },
+        {
+            "id": 2,
+            "type": "coupons",
+            "promoutedId": 2,
+            "img": "/assets/img/coupon.jpeg",
+            "content": "Banner content"
+        }
+    ]
 }

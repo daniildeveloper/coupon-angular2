@@ -1,0 +1,4 @@
+span.icon-prev.carousel-control-prev-icon:before, span.icon-next.carousel-control-next-icon:before{
+    display: none !important;
+    content: "" !important;
+}

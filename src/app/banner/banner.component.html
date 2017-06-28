@@ -1,12 +1,13 @@
 <carousel>
-  <slide><img src="assets/img/coupon.jpeg" alt="">
-  <div class="carousel-caption">
-    <h2>
-      sdadasdada
-    </h2>
-    some
-  </div>
+  <slide *ngFor="let item of carouselElements" >
+    <img src="assets/img/coupon.jpeg" alt="">
+    <div class="carousel-caption">
+      <h2>
+        <a routerLink="{{item['type']}}/{{item['promoutedId']}}">
+          {{item['content']}}
+        </a>
+      </h2>
+      
+    </div>
   </slide>
-  <slide><img src="assets/img/coupon.jpeg" alt=""></slide>
-  <slide><img src="assets/img/coupon.jpeg" alt=""></slide>
 </carousel>
