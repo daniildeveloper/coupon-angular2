@@ -2,7 +2,7 @@
     "id": 1,
     "title": "Купон",
     "shortDescription": "Какой то купон",
-    "description": "описание купона",
+    "description": "описание купона <a href='#'> asdasd </a>",
     "profitType": "Скидка",
     "price": 100,
     "oldPrice": 250,

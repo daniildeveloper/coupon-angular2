@@ -3,11 +3,11 @@
 
   <div class="row">
     <div class="col-md-7">
-        <carousel>
-          <slide *ngFor="let slide of slides" >
-            <img src="{{slide}}" alt="">
-          </slide>
-        </carousel>
+      <carousel>
+        <slide *ngFor="let slide of slides">
+          <img src="{{slide}}" alt="">
+        </slide>
+      </carousel>
     </div>
     <div class="col-md-5">
       <ul class="icon-group icon-list-rating text-color" title="4.5/5 rating">
@@ -16,20 +16,19 @@
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star-half-empty"></i></li>
-      </ul><small><a class="text-muted" href="#">оценили 4 купивших</a></small>
-      <h3>Контактный зоопарк</h3>
-      <p class="product-info-price">300тг</p>
-      <p class="text-smaller text-muted">Nulla quisque mi duis ultricies class eu quisque at dictumst lacus per ad nullam placerat euismod enim massa eros litora
-        primis lacus tincidunt mi urna luctus ridiculus fusce sem erat</p>
-      <ul class="icon-list">
-        <li><i class="fa fa-check"></i>Сертификат предоставляет возможность посетить ​контактный зоопарк Живая экзотика.</li>
-        <li><i class="fa fa-check"></i>После приобретения сертификата дополнительно оплачивать ничего не нужно.</li>
-        <li><i class="fa fa-check"></i>Детям до 3-х лет вход бесплатный.</li>
       </ul>
-      <ul class="list-inline">
-        <li><a class="btn btn-primary" href="#"><i class="fa fa-shopping-cart"></i> В корзину</a></li>
-        <li><a class="btn" href="#"><i class="fa fa-star"></i> В список покупок</a></li>
-      </ul>
+      <!--<small>
+        <a class="text-muted" href="#">оценили 4 купивших</a>
+      </small>-->
+      <div *ngIf="coupon">
+        <h3>{{coupon['title']}}</h3>
+        <p class="product-info-price">{{coupon['price']}}тг</p>
+      <p class="text-smaller text-muted">
+        {{coupon['shortDescription']}}
+      </p>
+        <div [innerHtml]="coupon['description']">
+        </div>
+      </div>
     </div>
   </div>
 </div>
