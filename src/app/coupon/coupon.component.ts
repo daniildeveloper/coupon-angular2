@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiServiceProvider } from '../api.service';
+declare var Swiper: any;
 
 @Component({
   selector: 'app-coupon',
@@ -11,6 +12,7 @@ export class CouponComponent implements OnInit {
   id;
   coupon;
   subscribtion;
+  slides;
 
   constructor(private _route: ActivatedRoute, private _api: ApiServiceProvider) { }
 
@@ -21,6 +23,7 @@ export class CouponComponent implements OnInit {
     this._api.getCoupon(this.id).subscribe(
       data => {
         this.coupon = data;
+        this.slides = data['images'];
         console.log(data);
       }
     );

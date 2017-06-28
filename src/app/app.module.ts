@@ -32,6 +32,7 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { CouponsChunkComponent } from './coupons-chunk/coupons-chunk.component';
 import { PromosComponent } from './promos/promos.component';
 import { SComponent } from './s/s.component';
+import { SwiperComponent } from './swiper/swiper.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { SComponent } from './s/s.component';
     SearchComponent,
     CouponsChunkComponent,
     PromosComponent,
-    SComponent
+    SComponent,
+    SwiperComponent
   ],
   imports: [
     BrowserModule,

@@ -13,14 +13,14 @@
         </div>
       </div>
       <header class="product-header">
-        <img style="height: 260px" src="{{coupon['imagePath']}}" alt="" title="">
+        <img style="height: 120px" src="{{coupon['imagePath']}}" alt="" title="">
         <div class="product-quick-view">
           <a class="fa fa-eye popup-text" routerLink="/coupons/{{coupon['id']}}" data-effect="mfp-move-from-top" data-toggle="tooltip"
             data-placement="top" title="Посмотреть"></a>
         </div>
         <div class="product-secondary-image" *ngIf="coupon['images']">
           
-          <img style="height: 260px" src="{{coupon['images'][0]}}" alt="" title="">
+          <img style="height: 120px" src="{{coupon['images'][0]}}" alt="" title="">
         </div>
       </header>
       <div class="product-inner">
